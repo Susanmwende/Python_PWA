@@ -16,10 +16,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('report_id', models.PositiveSmallIntegerField()),
-                ('town', models.CharField(max_length=20)),
-                ('street', models.CharField(max_length=30)),
                 ('pharmacy_id', models.PositiveSmallIntegerField()),
-                ('pharmacy_name', models.CharField(max_length=50)),
+                ('recalled_id', models.PositiveSmallIntegerField()),
             ],
         ),
     ]

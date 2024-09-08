@@ -16,7 +16,6 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('scan_id', models.PositiveSmallIntegerField()),
-                ('location', models.CharField(max_length=50)),
                 ('drug_name', models.CharField(max_length=40)),
                 ('batch_number', models.CharField(max_length=30)),
                 ('pharmacy_id', models.PositiveSmallIntegerField()),
