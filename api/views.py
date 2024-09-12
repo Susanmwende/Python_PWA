@@ -76,6 +76,7 @@ class RecalledDrugDetailView(APIView):
         recalled_drug = RecalledDrug.objects.get(id=id)
         recalled_drug.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+        
 class ScanEventListView(APIView):
 
     def get(self, request):
